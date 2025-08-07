@@ -8,7 +8,7 @@ screen = pygame.display.set_mode((800, 600))  # Width: 800px, Height: 600px
 pygame.display.set_caption("Display Image Example")
 
 # Load the image
-image = pygame.image.load("name.png").convert_alpha()  # Use convert_alpha() for transparency
+name_image = pygame.image.load("name.png").convert_alpha()  # Use convert_alpha() for transparency
 
 # Main loop
 running = True
@@ -21,7 +21,7 @@ while running:
     screen.fill((255, 255, 255))  # White background
 
     # Draw the image on the screen
-    screen.blit(image, (100, 100))  # Position the image at (100, 100)
+    screen.blit(name_image, (100, 100))  # Position the image at (100, 100)
 
     # Update the display
     pygame.display.flip()
